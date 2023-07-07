@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CollectionsDemo
-{ 
+{
     public class Program
     {
         //Collection is a class that means we can create an object.
@@ -14,9 +14,28 @@ namespace CollectionsDemo
 
         static void Main(string[] args)
         {
-            List_Demo list = new List_Demo();
-            list.Adding();
-            Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("choose the below options");
+                Console.WriteLine("1:List");
+                Console.WriteLine("2:Array");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        List_Demo list = new List_Demo();
+                        list.Adding();
+                        break;
+
+                    case 2:
+                        ArrayDemo arrayDemo = new ArrayDemo();
+                        arrayDemo.Add();
+                        break;
+
+                        Console.ReadLine();
+                }
+            }
         }
     }
 }
+
