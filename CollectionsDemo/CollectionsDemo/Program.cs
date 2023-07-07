@@ -10,6 +10,8 @@ namespace CollectionsDemo
     {
         //Collection is a class that means we can create an object.
         //can be create or declared instance of a class, so we can add a data in collections
+        //Collections types- are designed to store ,manage similar data.
+
         static void Main(string[] args)
         {
             List_Demo list = new List_Demo();
