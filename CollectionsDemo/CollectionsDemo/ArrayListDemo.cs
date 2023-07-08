@@ -15,11 +15,15 @@ namespace CollectionsDemo
         public void MyArrayList()
         { 
            ArrayList arrayList = new ArrayList();
-            arrayList.Add(1);
+            arrayList.Add(1234);
             arrayList.Add("Ruchita");
             arrayList.Add(13.5);
             arrayList.Add(789.09f);
             arrayList.Add('R');
+            arrayList.Insert(0, 1);
+            arrayList.Insert(1,"Sona");
+            arrayList.RemoveAt(1);
+            Console.WriteLine("COUNT FOR THE ARRAYLIST"+ arrayList.Count);
             Console.WriteLine("ArrayList using foreach loop");
             foreach (var item in arrayList)
             {
@@ -31,6 +35,7 @@ namespace CollectionsDemo
             {
                 Console.WriteLine(arrayList[i]);
             }
+           
         }
     }
 }

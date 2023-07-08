@@ -20,6 +20,7 @@ namespace CollectionsDemo
                 Console.WriteLine("1:List");
                 Console.WriteLine("2:Array");
                 Console.WriteLine("3:ArrayList");
+                Console.WriteLine("4:Dictionary");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -37,6 +38,11 @@ namespace CollectionsDemo
                         ArrayListDemo arrayListDemo = new ArrayListDemo();
                         arrayListDemo.MyArrayList();
                         break;
+
+                    case 4:
+                        DictionaryDemo dictionaryDemo = new DictionaryDemo();
+                        dictionaryDemo.Display();
+                        break; 
 
                         Console.ReadLine();
                 }
