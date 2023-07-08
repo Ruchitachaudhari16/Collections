@@ -19,6 +19,7 @@ namespace CollectionsDemo
                 Console.WriteLine("choose the below options");
                 Console.WriteLine("1:List");
                 Console.WriteLine("2:Array");
+                Console.WriteLine("3:ArrayList");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,6 +31,11 @@ namespace CollectionsDemo
                     case 2:
                         ArrayDemo arrayDemo = new ArrayDemo();
                         arrayDemo.Add();
+                        break;
+
+                        case 3:
+                        ArrayListDemo arrayListDemo = new ArrayListDemo();
+                        arrayListDemo.MyArrayList();
                         break;
 
                         Console.ReadLine();
